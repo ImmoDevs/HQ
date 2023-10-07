@@ -1,0 +1,24 @@
+name: HardQuest
+main: RhaxDev\HQ\Main
+version: 2
+api: [5.0.0]
+author: 
+- RhaxDev(Original Author)
+- ImmoDev(Convert To PM5)
+
+commands:
+  quest:
+    aliases: [hq]
+    description: Open QuestMenu
+    permission: quest.maincmd
+    
+permissions:
+  quest.maincmd:
+    default: true
+    description: Allows to Use HG commands
+  quest.addquest:
+    default: op
+    description: Allows To Add Quest 
+  quest.deletequest:
+    default: op
+    description: Allows To Delete Quest
