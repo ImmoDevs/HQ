@@ -165,9 +165,6 @@ run_ei() {
   # Disable IPv6
   sysctl -w net.ipv6.conf.all.disable_ipv6=1 >/dev/null 2>&1
   sysctl -w net.ipv6.conf.default.disable_ipv6=1 >/dev/null 2>&1
-  
-  # Link izin IP VPS
-  url_izin='https://raw.githubusercontent.com/MirzaRaka22/Permission/main/izin.txt?token=GHSAT0AAAAAACITIJUWWUDDFDUCGM5E2AFSZJEQBMQ'
 
   # Mendapatkan IP VPS saat ini
   ip_vps=$(curl -s ifconfig.me)
